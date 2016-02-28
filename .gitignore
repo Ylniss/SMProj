@@ -1,0 +1,7 @@
+*.cache
+source/VJPlayer/obj/Debug/VJPlayer_MarkupCompile.i.cache
+source/VJPlayer/obj/Debug/VJPlayer.exe
+*.pdb
+source/VJPlayer/obj/Debug/VJPlayer.csproj.FileListAbsolute.txt
+*.cache
+output/VJPlayer.pdb

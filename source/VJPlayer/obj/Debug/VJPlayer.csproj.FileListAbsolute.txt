@@ -13,3 +13,17 @@ G:\SMProj\source\VJPlayer\obj\Debug\VJPlayer.Properties.Resources.resources
 G:\SMProj\source\VJPlayer\obj\Debug\VJPlayer.csproj.GenerateResource.Cache
 G:\SMProj\source\VJPlayer\obj\Debug\VJPlayer.exe
 G:\SMProj\source\VJPlayer\obj\Debug\VJPlayer.pdb
+D:\SMProj\Output\VJPlayer.exe.config
+D:\SMProj\source\VJPlayer\obj\Debug\VJPlayer.exe
+D:\SMProj\source\VJPlayer\obj\Debug\VJPlayer.pdb
+D:\SMProj\Output\VJPlayer.exe
+D:\SMProj\Output\VJPlayer.pdb
+D:\SMProj\source\VJPlayer\obj\Debug\VJPlayer.csprojResolveAssemblyReference.cache
+D:\SMProj\source\VJPlayer\obj\Debug\MainWindow.g.cs
+D:\SMProj\source\VJPlayer\obj\Debug\App.g.cs
+D:\SMProj\source\VJPlayer\obj\Debug\VJPlayer_MarkupCompile.cache
+D:\SMProj\source\VJPlayer\obj\Debug\VJPlayer_MarkupCompile.lref
+D:\SMProj\source\VJPlayer\obj\Debug\MainWindow.baml
+D:\SMProj\source\VJPlayer\obj\Debug\VJPlayer.g.resources
+D:\SMProj\source\VJPlayer\obj\Debug\VJPlayer.Properties.Resources.resources
+D:\SMProj\source\VJPlayer\obj\Debug\VJPlayer.csproj.GenerateResource.Cache
