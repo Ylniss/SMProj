@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <TextBlock
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Text="APLIKACJA CHMUROWA.">
+            
+        </TextBlock>
     </Grid>
 </Window>
