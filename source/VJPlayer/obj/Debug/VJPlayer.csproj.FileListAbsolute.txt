@@ -1,0 +1,15 @@
+G:\SMProj\source\VJPlayer\bin\Debug\VJPlayer.exe.config
+G:\SMProj\Output\VJPlayer.exe.config
+G:\SMProj\Output\VJPlayer.exe
+G:\SMProj\Output\VJPlayer.pdb
+G:\SMProj\source\VJPlayer\obj\Debug\VJPlayer.csprojResolveAssemblyReference.cache
+G:\SMProj\source\VJPlayer\obj\Debug\MainWindow.g.cs
+G:\SMProj\source\VJPlayer\obj\Debug\App.g.cs
+G:\SMProj\source\VJPlayer\obj\Debug\VJPlayer_MarkupCompile.cache
+G:\SMProj\source\VJPlayer\obj\Debug\VJPlayer_MarkupCompile.lref
+G:\SMProj\source\VJPlayer\obj\Debug\MainWindow.baml
+G:\SMProj\source\VJPlayer\obj\Debug\VJPlayer.g.resources
+G:\SMProj\source\VJPlayer\obj\Debug\VJPlayer.Properties.Resources.resources
+G:\SMProj\source\VJPlayer\obj\Debug\VJPlayer.csproj.GenerateResource.Cache
+G:\SMProj\source\VJPlayer\obj\Debug\VJPlayer.exe
+G:\SMProj\source\VJPlayer\obj\Debug\VJPlayer.pdb
