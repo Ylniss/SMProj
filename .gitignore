@@ -9,3 +9,7 @@ source/VJPlayer/obj/Debug/VJPlayer_MarkupCompile.lref
 source/VJPlayer/obj/Debug/VJPlayer_MarkupCompile.i.cache
 source/VJPlayer/obj/Debug/MainWindow.g.i.cs
 source/VJPlayer/obj/Debug/MainWindow.g.i.cs
+*.pdb
+*.baml
+source/VJPlayer/obj/Debug/VJPlayer.exe
+source/VJPlayer/obj/Debug/VJPlayer.pdb

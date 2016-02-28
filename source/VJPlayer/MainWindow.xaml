@@ -7,11 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <TextBlock
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            Text="APLIKACJA CHMUROWA.">
-            
-        </TextBlock>
+        <Label x:Name="label" Content="Label" HorizontalAlignment="Right"  VerticalAlignment="Top" Margin="0,283,469,0"/>
+
     </Grid>
 </Window>
