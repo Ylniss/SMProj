@@ -26,8 +26,6 @@ namespace VJPlayer
                 // handling code you have defined.
                 var d = files[0];
                 OpenFileDialog s = new OpenFileDialog();
-                s.
-              
             }
 
         }
