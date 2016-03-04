@@ -4,16 +4,32 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VJPlayer"
-        mc:Ignorable="d" Title="VJPlayer" Height="350" Width="525" Background="Black" AllowDrop="True">
-    <Grid >
+        mc:Ignorable="d"
+        Title="VJPlayer"
+        Width="525"
+        Height="350"
+        Background="Black"
+        AllowDrop="True"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="CanResizeWithGrip">
+    <Grid>
+
         <TextBlock
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
             Foreground="White"
             Text="Drop content here"
             />
-        <MediaElement x:Name="mediaElement"
-                      AllowDrop="True"/>
 
+        <MediaElement x:Name="mediaElement"/>
+
+        <Grid.ContextMenu>
+            <ContextMenu>
+                <MenuItem Header="Spawn New Window" Click="OnSpawnClick">
+                </MenuItem>
+            </ContextMenu>
+        </Grid.ContextMenu>
+        
     </Grid>
 </Window>
