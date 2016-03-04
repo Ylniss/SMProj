@@ -4,14 +4,41 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VJPlayer"
-        mc:Ignorable="d" Title="VJPlayer" Height="350" Width="525" Background="Black" AllowDrop="True">
-    <Grid >
+        mc:Ignorable="d"
+        Title="VJPlayer"
+        Width="525"
+        Height="350"
+        Background="Black"
+        AllowDrop="True"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="CanResizeWithGrip"
+        >
+    
+    <Grid Background="Transparent">
         <TextBlock
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
             Foreground="White"
             Text="Drop content here"
             />
- 
+
+        <MediaElement x:Name="mediaElement"/>
+
+        <Grid.ContextMenu>
+            <ContextMenu>
+                <!--Ogarnąć MVVM i Command bo nie używa się Click-->
+                <MenuItem Header="Close" Click="Close">
+                </MenuItem>
+                <MenuItem Header="Minimize" Click="Minimize">
+                </MenuItem>
+
+                <Separator/>
+
+                <MenuItem Header="Spawn New Window" Click="OnSpawnClick">
+                </MenuItem>
+            </ContextMenu>
+        </Grid.ContextMenu>
+
     </Grid>
 </Window>
