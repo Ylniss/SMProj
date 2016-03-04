@@ -12,6 +12,8 @@
             Foreground="White"
             Text="Drop content here"
             />
- 
+        <MediaElement x:Name="mediaElement"
+                      AllowDrop="True"/>
+
     </Grid>
 </Window>

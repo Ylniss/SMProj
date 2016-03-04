@@ -24,8 +24,11 @@ namespace VJPlayer
 
                 // Assuming you have one file that you care about, pass it off to whatever
                 // handling code you have defined.
-                var d = files[0];
-                OpenFileDialog s = new OpenFileDialog();
+                var filePath = files[0];
+
+                System.Uri uri;
+                System.Uri.TryCreate(filePath, System.UriKind.Absolute, out uri);
+                mediaElement.Source = uri;
             }
 
         }
