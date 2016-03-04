@@ -13,9 +13,8 @@ namespace VJPlayer
         {
             InitializeComponent();
             Drop += CoreWindow_Drop;
-            MouseDown += CoreWindow_MouseDown;
+            MouseLeftButtonDown += CoreWindow_MouseLeftButtonDown; 
         }
-
 
         /// <summary>
         /// Obsługa drag'n'drop, przekazuje Uri przeciągniętego pliku do mediaElement
@@ -42,15 +41,14 @@ namespace VJPlayer
         /// <summary>
         /// Umożliwia przeciąganie okna bez ramek lewym przyciskiem myszy
         /// </summary>
-        private void CoreWindow_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        private void CoreWindow_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             try
             {
-                this.DragMove();
+                DragMove();
             }
             catch (System.InvalidOperationException)
             {
-
             }
         }
 
@@ -61,6 +59,16 @@ namespace VJPlayer
         {
             CoreWindow newWindow = new CoreWindow();
             newWindow.Show();
+        }
+
+        private void Close(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Minimize(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
         }
     }
 }

@@ -12,9 +12,10 @@
         AllowDrop="True"
         WindowStyle="None"
         AllowsTransparency="True"
-        ResizeMode="CanResizeWithGrip">
-    <Grid>
-
+        ResizeMode="CanResizeWithGrip"
+        >
+    
+    <Grid Background="Transparent">
         <TextBlock
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
@@ -26,10 +27,18 @@
 
         <Grid.ContextMenu>
             <ContextMenu>
+                <!--Ogarnąć MVVM i Command bo nie używa się Click-->
+                <MenuItem Header="Close" Click="Close">
+                </MenuItem>
+                <MenuItem Header="Minimize" Click="Minimize">
+                </MenuItem>
+
+                <Separator/>
+
                 <MenuItem Header="Spawn New Window" Click="OnSpawnClick">
                 </MenuItem>
             </ContextMenu>
         </Grid.ContextMenu>
-        
+
     </Grid>
 </Window>
