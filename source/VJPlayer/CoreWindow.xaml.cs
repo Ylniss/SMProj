@@ -1,6 +1,6 @@
-﻿using Microsoft.Win32;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media.Animation;
 
 namespace VJPlayer
 {
@@ -9,6 +9,8 @@ namespace VJPlayer
     /// </summary>
     public partial class CoreWindow : Window
     {
+        double Volume;
+
         public CoreWindow()
         {
             InitializeComponent();
@@ -34,6 +36,8 @@ namespace VJPlayer
                 System.Uri uri;
                 System.Uri.TryCreate(filePath, System.UriKind.Absolute, out uri);
                 mediaElement.Source = uri;
+
+                Volume = mediaElement.Volume;
             }
 
         }
@@ -69,6 +73,37 @@ namespace VJPlayer
         private void Minimize(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
+        }
+
+        /// <summary>
+        /// Wywołanie animacji (fade-in) przy najechaniu kursorem na kontrolki
+        /// </summary>
+        private void MediaControlsCanvas_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            Canvas c = (Canvas)sender;
+            DoubleAnimation animation = new DoubleAnimation(1, System.TimeSpan.FromMilliseconds(300));
+            c.BeginAnimation(Canvas.OpacityProperty, animation);
+        }
+
+        /// <summary>
+        /// Wywołanie animacji (fade-out) przy najechaniu kursorem na kontrolki
+        /// </summary>
+        private void MediaControlsCanvas_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            Canvas c = (Canvas)sender;
+            DoubleAnimation animation = new DoubleAnimation(0, System.TimeSpan.FromMilliseconds(300));
+            c.BeginAnimation(Canvas.OpacityProperty, animation);
+        }
+
+        /// <summary>
+        /// Wyciszenie/przywrócenie dźwięku mediaElement
+        /// </summary>
+        private void OnMute(object sender, RoutedEventArgs e)
+        {
+            if(muteButton.IsChecked.Value)
+                mediaElement.Volume = Volume;
+            else
+                mediaElement.Volume = 0;
         }
     }
 }
