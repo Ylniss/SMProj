@@ -1,9 +1,9 @@
-﻿<Window x:Class="VJPlayer.CoreWindow"
+﻿<Window x:Class="VJPlayer.Views.CoreWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:VJPlayer"
+        xmlns:local="clr-namespace:VJPlayer.Views"
         mc:Ignorable="d"
         Title="VJPlayer"
         Width="525"
@@ -41,16 +41,22 @@
 
         <MediaElement x:Name="mediaElement"/>
 
-        <Canvas HorizontalAlignment="Left" Height="35" VerticalAlignment="Bottom" Width="525" MouseEnter="MediaControlsCanvas_MouseEnter" MouseLeave="MediaControlsCanvas_MouseLeave">
+        <Canvas HorizontalAlignment="Left"
+                Width="525"
+                Height="35" 
+                VerticalAlignment="Bottom" 
+                Opacity="0"
+                MouseEnter="MediaControlsCanvas_MouseEnter"
+                MouseLeave="MediaControlsCanvas_MouseLeave">
 
             <Button x:Name="playButton" Content="Play" Canvas.Left="10" Canvas.Top="3" Width="75">
                 <!--todo: wrzucic <Image> </Image>-->
             </Button>
-            
+
             <Slider x:Name="slider" Canvas.Left="112" Canvas.Top="3" Width="301"/>
-            
+
             <ToggleButton x:Name="muteButton" Content="Mute" Canvas.Left="418" Canvas.Top="3" Width="40" Click="OnMute">
-                
+
             </ToggleButton>
 
         </Canvas>

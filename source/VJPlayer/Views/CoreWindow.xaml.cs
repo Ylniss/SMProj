@@ -1,11 +1,22 @@
-﻿using System.Windows;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
-namespace VJPlayer
+namespace VJPlayer.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for CoreWindow.xaml
     /// </summary>
     public partial class CoreWindow : Window
     {
@@ -15,7 +26,7 @@ namespace VJPlayer
         {
             InitializeComponent();
             Drop += CoreWindow_Drop;
-            MouseLeftButtonDown += CoreWindow_MouseLeftButtonDown; 
+            MouseLeftButtonDown += CoreWindow_MouseLeftButtonDown;
         }
 
         /// <summary>
@@ -100,7 +111,7 @@ namespace VJPlayer
         /// </summary>
         private void OnMute(object sender, RoutedEventArgs e)
         {
-            if(muteButton.IsChecked.Value)
+            if (muteButton.IsChecked.Value)
                 mediaElement.Volume = Volume;
             else
                 mediaElement.Volume = 0;
