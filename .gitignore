@@ -261,6 +261,3 @@ _Pvt_Extensions
 # JetBrains Rider
 .idea/
 *.sln.iml
-output/VJPlayer.exe
-source/VJPlayer/obj/Debug/VJPlayer.exe
-source/VJPlayer/obj/Debug/VJPlayer_MarkupCompile.cache

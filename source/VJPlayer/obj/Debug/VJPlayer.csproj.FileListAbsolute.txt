@@ -40,3 +40,4 @@ C:\Users\Janek\Documents\Visual Studio 2015\Projects\SMProj\source\VJPlayer\obj\
 C:\Users\Janek\Documents\Visual Studio 2015\Projects\SMProj\source\VJPlayer\obj\Debug\VJPlayer.csproj.GenerateResource.Cache
 C:\Users\Janek\Documents\Visual Studio 2015\Projects\SMProj\source\VJPlayer\obj\Debug\VJPlayer.exe
 C:\Users\Janek\Documents\Visual Studio 2015\Projects\SMProj\source\VJPlayer\obj\Debug\VJPlayer.pdb
+C:\Users\Janek\Documents\Visual Studio 2015\Projects\SMProj\source\VJPlayer\obj\Debug\VJPlayer.csprojResolveAssemblyReference.cache
