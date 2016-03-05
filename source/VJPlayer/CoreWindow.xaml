@@ -4,14 +4,55 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VJPlayer"
-        mc:Ignorable="d" Title="VJPlayer" Height="350" Width="525" Background="Black" AllowDrop="True">
-    <Grid >
+        mc:Ignorable="d"
+        Title="VJPlayer"
+        Width="525"
+        Height="350"
+        Background="#FF202020"
+        AllowDrop="True"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="CanResizeWithGrip"
+        >
+
+    <Grid Background="Transparent">
+
+        <Grid.ContextMenu>
+            <ContextMenu>
+                <!--Ogarnąć MVVM i Command bo nie używa się Click-->
+                <MenuItem Header="Close" Click="Close">
+                </MenuItem>
+                <MenuItem Header="Minimize" Click="Minimize">
+                </MenuItem>
+
+                <Separator/>
+
+                <MenuItem Header="Spawn New Window" Click="OnSpawnClick">
+                </MenuItem>
+            </ContextMenu>
+        </Grid.ContextMenu>
+
         <TextBlock
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
             Foreground="White"
             Text="Drop content here"
             />
- 
+
+        <MediaElement x:Name="mediaElement"/>
+
+        <Canvas HorizontalAlignment="Left" Height="35" VerticalAlignment="Bottom" Width="525" MouseEnter="MediaControlsCanvas_MouseEnter" MouseLeave="MediaControlsCanvas_MouseLeave">
+
+            <Button x:Name="playButton" Content="Play" Canvas.Left="10" Canvas.Top="3" Width="75">
+                <!--todo: wrzucic <Image> </Image>-->
+            </Button>
+            
+            <Slider x:Name="slider" Canvas.Left="112" Canvas.Top="3" Width="301"/>
+            
+            <ToggleButton x:Name="muteButton" Content="Mute" Canvas.Left="418" Canvas.Top="3" Width="40" Click="OnMute">
+                
+            </ToggleButton>
+
+        </Canvas>
     </Grid>
 </Window>
